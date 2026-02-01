@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Yams</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header>
+        <div id="titre">
+          <img src="resources/dices.png" width="320" height="200">
+          <h1>YAMS</h1>
+          <img src="resources/dices.png" width="320" height="200">
+        </div>
+        <form id="partieForm">
+            <label for="partie_id">Entrez un identifiant de partie :</label>
+            <input type="text" id="partie_id" name="partie_id" placeholder="ex: n7xm8xza7m" required>
+            <input type="submit" value="OK">
+        </form>
+        
+        <div id="affichageParametres"><!--Endroit où sera affiché le code groupe et la date--></div>
+        
+        <form id="choixForm"><!--Futur formulaire du choix d'affichage généré dans le javascript--></form>
+    </header>
+    
+    <main>
+        <div id="affichage"><!--Remplacé par tableau scores quand partie chargée et affichage choisi--></div>
+        <script src='js/script.js'></script>
+    </main>
+    
+    <footer>
+        <p>2025 - IUT Robert Schuman <br> Aparicio | Stoll-Geyer | Courseaux </p>
+    </footer>
+    
+  </body>
+</html>

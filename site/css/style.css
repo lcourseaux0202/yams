@@ -1,0 +1,240 @@
+/* --- Styles globaux --- */
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: lightcyan;
+  margin: 0; /* Supprime les marges */
+  height: 100%; /* Hauteur totale de la page */
+  min-height: 100vh; /* Hauteur minimale pour que le footer se place tout en bas */
+  font-family: Arial, sans-serif;
+}
+
+/* --- Header et Footer --- */
+header, footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: blanchedalmond; 
+  padding: 2rem; 
+}
+
+header {
+  border-bottom: 0.5rem solid white;
+  border-left: 0.5rem solid white;
+  border-right: 0.5rem solid white;
+  border-bottom-left-radius: 20%; /* Coins arrondis en bas */
+  border-bottom-right-radius: 20%;
+}
+
+#titre{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-around;
+}
+
+footer {
+  text-align: center;
+  border-top: 0.5rem solid white;
+  border-left: 0.5rem solid white;
+  border-right: 0.5rem solid white;
+  border-top-left-radius: 20%; /* Coins arrondis en haut */
+  border-top-right-radius: 20%;
+}
+
+/* --- Main --- */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1; /* Prend tout l'espace disponible */
+  padding: 5%;
+}
+
+/* --- Titres --- */
+h1 {
+  font-size: 3rem;
+  color: plum;
+  background-color: moccasin;
+  border: 0.2rem solid white;
+  border-radius: 10rem;
+  padding : 1rem 4rem 1rem 4rem;
+  text-shadow: 0.2rem 0.2rem white;
+  
+
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h3 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+/* --- Images --- */
+img {
+  padding: 2rem;
+}
+
+#arrow-left, #arrow-right {
+  scale: 1; /* Échelle initiale */
+  transition: transform 0.3s; /* Temps d'animation */
+  cursor: pointer;
+}
+
+#arrow-right:hover, #arrow-left:hover {
+  transform: scale(1.2); /* Agrandit légèrement quand la souris passe dessus */
+}
+
+/* --- Boutons --- */
+input[type="submit"], 
+button {
+  padding: 0.3rem 1rem;
+  background-color: aquamarine;
+  color: black;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Effet au survol */
+}
+
+input[type="submit"]:hover, 
+button:hover {
+  background-color: rgb(102, 213, 176);
+}
+
+.radio-group {
+  display: flex;
+  gap: 1rem; 
+  padding: 0.5rem;
+}
+
+/* --- Formulaires --- */
+#choixForm {
+  display: flex;
+  flex-direction: column;
+  border: 0.1rem solid white;
+  background-color: white;
+  padding: 1rem;
+  width: 50%; 
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+#choixForm input {
+  display: none; /* Masque les boutons radio */
+}
+
+#choixForm input[type="radio"]:checked + label {
+  background-color: #81beff; 
+  color: #fff;
+}
+
+#choixForm label {
+  cursor: pointer;
+  padding: 0.5rem;
+  border: solid 0.1rem grey;
+  border-radius: 0.5rem;
+}
+
+#choixForm fieldset {
+  display: flex;
+  align-items: row;
+  border: none; 
+}
+
+#choixForm button {
+  padding: 1% 5%;
+}
+
+#partieForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; 
+  border: 0.1rem solid white;
+  background-color: white;
+  padding: 1rem;
+  width: 50%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* --- Affichage des paramètres --- */
+#affichageParametres {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly; 
+  border: 0.1rem solid white;
+  background-color: white;
+  padding: 1rem;
+  width: 50%;
+}
+
+/* --- Affichage principal --- */
+#affichage {
+  display: flex;
+  flex-direction: column;
+}
+
+#affichage-detail {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between;
+  width: 99vw;
+  align-items: center;
+}
+
+#resultats {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#resultats p {
+  text-align: center;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.info-tour-group {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+/* --- Tableaux --- */
+table {
+  border-collapse: collapse; /* Supprime les espaces entre les cellules */
+  border: 0.1rem solid;
+}
+
+th, td {
+  border: 0.1rem solid;
+  padding: 0.5rem;
+  width: 10rem;
+}
+
+thead {
+  background-color: lightblue;
+}
+
+tbody {
+  background-color: whitesmoke;
+}
+
+tfoot {
+  background-color: peachpuff;
+}
+
+#scoreTotal tbody{
+  background-color: palegoldenrod;
+}
